@@ -1,0 +1,55 @@
+.TH html-hyphenator 1 "September 2011"
+.SH NAME
+html\-hyphenator \- CLI tool for hyphenating HTML files
+
+.SH SYNOPSIS
+.B html\-hyphenator
+[
+.B -h, \-\-help
+]
+
+.B html\-hyphenator
+[
+.B -s SYMBOL, --symbol=SYMBOL
+]
+.I lang_code input_file
+
+.B html\-hyphenator
+[
+.B -o FILE, --output=FILE
+]
+.I lang_code input_file
+
+.SH DESCRIPTION
+.PP
+html\-hyphenator tool allows hyphenating the static HTML files.
+This tool was developed to help Malayalam Wikisource to bring
+out their offline Wikisource CD which is available at
+http://www.mlwiki.in/wikisrccd.
+.PP
+.SH GENERAL OPTIONS
+
+.TP
+\-h \-\-help
+Print a help message.
+
+.TP
+\-s SYMBOL, \-\-symbol=SYMBOL
+Use SYMBOL for hyphenation. If this option is not specified tool
+uses soft hyphen (\\u00AD) by default.
+
+.TP
+\-o FILE, \-\-output=FILE
+Store the output in FILE. If this option is not specified tool
+overwrites the input file.
+
+.TP
+.I lang_code
+ISO Language code. Specifies the language of input file.
+
+.TP
+.I input_file
+HTML file which should be used as input.
+
+.SH AUTHOR
+Vasudeva Kamath <kamathvasudev@gmail.com>

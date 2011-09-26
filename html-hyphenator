@@ -1,0 +1,5 @@
+#!/usr/bin/python
+import libhtmlhyphenate
+
+if __name__ == "__main__":
+    libhtmlhyphenate.main()
